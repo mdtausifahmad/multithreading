@@ -105,3 +105,41 @@ class ThreadUnsafeCounter {
 
 
 ```
+
+
+## Synchronous vs Asynchronous
+
+### Synchronous
+
+- Synchronous execution refers to line-by-line execution of code.  
+- If a function is invoked, the program execution waits until the function call is completed.  
+- Synchronous execution blocks at each method call before proceeding to the next line of code. A program executes in the same sequence as the code in the source code file.  
+- Synchronous execution is synonymous to serial execution.
+
+### Asynchronous
+
+- Asynchronous (or async) execution refers to execution that doesn't block when invoking subroutines.
+
+- An asynchronous program doesn’t wait for a task to complete and can move on to the next task.
+
+## I/O Bound vs CPU Bound
+
+
+
+We write programs to solve problems. Programs utilize various resources of the computer systems on which they run. For instance a program running on your machine will broadly require:
+
+ - CPU Time
+
+ - Memory
+
+ - Networking Resources
+
+ - Disk Storage
+
+Depending on what a program does, it can require heavier use of one or more resources. For instance, a program that loads gigabytes of data from storage into main memory would hog the main memory of the machine it runs on. Another can be writing several gigabytes to permanent storage, requiring abnormally high disk i/o.
+
+### CPU Bound
+
+Programs which are compute-intensive i.e. program execution requires very high utilization of the CPU (close to 100%) are called CPU bound programs. Such programs primarily depend on improving CPU speed to decrease program completion time.
+
+This could include programs such as data crunching, image processing, matrix multiplication etc.
